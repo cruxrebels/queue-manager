@@ -11,15 +11,16 @@
 */
 
 Ext.application({
-    name: 'qum',
+    name: 'Qum',
 
     requires: [
         'Ext.MessageBox'
     ],
 
     views: [
-        'Main'
+        'Main','Login','EmployeeHome','VendorHome'
     ],
+    //controllers:['LoginController'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
@@ -44,7 +45,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('qum.view.Main'));
+        //Ext.Viewport.add(Ext.create('Qum.view.Login'));
+         Ext.Viewport.add({xtype:'Login'});
     },
 
     onUpdated: function() {

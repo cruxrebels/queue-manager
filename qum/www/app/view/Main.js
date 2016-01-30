@@ -1,4 +1,4 @@
-Ext.define('qum.view.Main', {
+Ext.define('Qum.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
