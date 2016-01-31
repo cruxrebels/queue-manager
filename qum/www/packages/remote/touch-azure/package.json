@@ -1,0 +1,32 @@
+{
+  "name": "touch-azure",
+  "format": "1",
+  "version": "1.0.0.180",
+  "compatVersion": "1.0.0.0",
+  "creator": "Sencha",
+  "summary": "Sencha Touch Extensions for Windows Azure",
+  "detailedDescription": "Sencha Touch Extensions for Windows Azure is an API designed to provide an easy way to develop Sencha Touch applications that can access the Windows Azure APIs using JavaScript.",
+  "type": "code",
+  "requires": [
+    "sencha-azure"
+  ],
+  "signatures": [
+    {
+      "name": "Sencha",
+      "uuid": "e93ebd09-85f5-46b6-bfc1-c7f06cf0b8a5",
+      "created": "2014-09-03T22:53:57Z",
+      "algorithm": "SHA1withRSA",
+      "nonce": "a6ETAZhVkbQ\u003d",
+      "signature": "jC8htqWgcbmH3R36uEQGvDmJaN4Kw4WoKvPxJPnLY6DDkrncvjmDBfXvTbZ/DAXyDvQB3ppIAaDu2aLi7buyzEy7OK8TTOgvJ64u/SOkQffdpgp4fnJ8nMyJ44+fUSHk9PrHidc+LLfzDHd1LXwYCB49EypG+h/zSCPPOfpiNCsWEj+cABIYXAEemcRj40jhynnn6NdHHXuN7BmmK2PdHJWc9pwMks9JtUk5MmCo45TGrPr9jsMSoRmG2T9+lwdVAl22Qs0Olj99nysSWlx3lFbZYfKTT0LT13JvThkwZfy2KT+QmIPtfBudlXtgIVXwHBxuf/8QMGJYv4dwMUF9UDlle08fZk+ZoamrJXHOKRymlVIKSw28SW9/RTUYSrOvzz06DubUKEeDGRpF2BDXq2A1xKA4LVYvb4/VHNsIUQosFqszu7QZyP1l0QqMwBr6TetrGVJYuNmtnUpTlZ8cJdFcn9SxrIh7fhryzmLjLCgBxWlYuM2nASu2r6z4srF1xtk1ntbuUS1232uv5kodo4IRRhsVj4K3E9e3x4UVakZ+6AGD9z0M+obW1xVdYu4viVXhga0dt8gkU53nGILDIsyDLwFH7BsIQD5++YdLFui4p/vFfHuQoV80Jv+YUsgnGCJ3xN2eXtLUOEkLb2M7AFNBcTTNUX3QOo5sBW9R2n4\u003d"
+    }
+  ],
+  "slicer": {
+    "js": [
+      {
+        "path": "${package.dir}/sass/example/custom.js",
+        "isWidgetManifest": true
+      }
+    ]
+  },
+  "output": "${package.dir}/build"
+}

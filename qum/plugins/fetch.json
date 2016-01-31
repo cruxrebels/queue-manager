@@ -1,0 +1,10 @@
+{
+    "com.microsoft.azure-mobile-services": {
+        "source": {
+            "type": "registry",
+            "id": "com.microsoft.azure-mobile-services"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

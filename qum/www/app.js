@@ -14,8 +14,14 @@ Ext.application({
     name: 'Qum',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Ext.azure.Azure'
     ],
+
+    azure: {
+        appKey: 'akDPoysbEinbTfmwxGZcopXAAjLdVd85',
+        appUrl: 'https://qum.azure-mobile.net'
+    },
 
     views: [
         'Main','Login','EmployeeHome','VendorHome'
@@ -44,6 +50,9 @@ Ext.application({
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
+        // Call Azure initialization
+        Ext.Azure.init(this.config.azure);
+
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('Qum.view.Login'));
          Ext.Viewport.add({xtype:'Login'});
@@ -60,4 +69,12 @@ Ext.application({
             }
         );
     }
+
+        Ext.Loader.setConfig({
+    enabled : true,
+    paths   : {
+        'Ext'       : 'sencha-azure/src',
+        'Ext.azure' : 'D:/Hackathon/queue-manager/qum/www/packages/remote/sencha-azure/src'
+    }
+});
 });

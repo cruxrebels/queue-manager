@@ -21,6 +21,9 @@ Ext.Loader.addClassPathMappings({
   "Ext.Element-static": "touch/src/dom/Element.static.js",
   "Ext.Element-style": "touch/src/dom/Element.style.js",
   "Ext.Element-traversal": "touch/src/dom/Element.traversal.js",
+  "Ext._azure_touch": "packages/remote/sencha-azure/src-touch",
+  "Ext.azure": "packages/remote/sencha-azure/src",
+  "Ext.azure.override": "packages/remote/sencha-azure/overrides-touch",
   "Ext.core.DomQuery": "touch/src/dom/Query.js",
   "Ext.device.Purchases.Product": "touch/src/device/purchases/Sencha.js",
   "Ext.device.filesystem.DirectoryEntry": "touch/src/device/filesystem/Sencha.js",
@@ -32,7 +35,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "qum": "app"
+  "Qum": "app"
 });
 
 Ext.ClassManager.addNameAlternateMappings({
@@ -88,6 +91,9 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.XTemplate": [],
   "Ext.XTemplateCompiler": [],
   "Ext.XTemplateParser": [],
+  "Ext._azure_touch.AuthOptions": [],
+  "Ext._azure_touch.Push": [],
+  "Ext._azure_touch.User": [],
   "Ext.app.Action": [],
   "Ext.app.Application": [],
   "Ext.app.Controller": [],
@@ -95,6 +101,20 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.app.Profile": [],
   "Ext.app.Route": [],
   "Ext.app.Router": [],
+  "Ext.azure.AuthWindow": [],
+  "Ext.azure.Authentication": [],
+  "Ext.azure.Azure": [],
+  "Ext.azure.Controller": [],
+  "Ext.azure.Filter": [],
+  "Ext.azure.Proxy": [
+    "Ext.data.AzureProxy"
+  ],
+  "Ext.azure.Store": [],
+  "Ext.azure.override.Azure": [],
+  "Ext.azure.override.JsonReader": [],
+  "Ext.azure.storage.Abstract": [],
+  "Ext.azure.storage.Blob": [],
+  "Ext.azure.storage.Table": [],
   "Ext.behavior.Behavior": [],
   "Ext.behavior.Draggable": [],
   "Ext.behavior.Scrollable": [],
@@ -532,17 +552,6 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -668,7 +677,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "qum.view.Main": []
+  "Qum.view.EmployeeHome": [],
+  "Qum.view.Login": [],
+  "Qum.view.Main": [],
+  "Qum.view.VendorHome": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -759,6 +771,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.XTemplate": [],
   "Ext.XTemplateCompiler": [],
   "Ext.XTemplateParser": [],
+  "Ext._azure_touch.AuthOptions": [],
+  "Ext._azure_touch.Push": [],
+  "Ext._azure_touch.User": [],
   "Ext.app.Action": [],
   "Ext.app.Application": [],
   "Ext.app.Controller": [],
@@ -766,6 +781,22 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.app.Profile": [],
   "Ext.app.Route": [],
   "Ext.app.Router": [],
+  "Ext.azure.AuthWindow": [],
+  "Ext.azure.Authentication": [],
+  "Ext.azure.Azure": [],
+  "Ext.azure.Controller": [],
+  "Ext.azure.Filter": [],
+  "Ext.azure.Proxy": [
+    "proxy.azure"
+  ],
+  "Ext.azure.Store": [
+    "store.azure"
+  ],
+  "Ext.azure.override.Azure": [],
+  "Ext.azure.override.JsonReader": [],
+  "Ext.azure.storage.Abstract": [],
+  "Ext.azure.storage.Blob": [],
+  "Ext.azure.storage.Table": [],
   "Ext.behavior.Behavior": [],
   "Ext.behavior.Draggable": [],
   "Ext.behavior.Scrollable": [],
@@ -1249,17 +1280,6 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.layout.wrapper.BoxDock": [],
   "Ext.layout.wrapper.Dock": [],
   "Ext.layout.wrapper.Inner": [],
-  "Ext.log.Base": [],
-  "Ext.log.Logger": [],
-  "Ext.log.filter.Filter": [],
-  "Ext.log.filter.Priority": [],
-  "Ext.log.formatter.Default": [],
-  "Ext.log.formatter.Formatter": [],
-  "Ext.log.formatter.Identity": [],
-  "Ext.log.writer.Console": [],
-  "Ext.log.writer.DocumentTitle": [],
-  "Ext.log.writer.Remote": [],
-  "Ext.log.writer.Writer": [],
   "Ext.mixin.Bindable": [],
   "Ext.mixin.Filterable": [],
   "Ext.mixin.Mixin": [],
@@ -1397,16 +1417,29 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
-  "qum.view.Main": [
+  "Qum.view.EmployeeHome": [
+    "widget.ehome"
+  ],
+  "Qum.view.Login": [
+    "widget.Login"
+  ],
+  "Qum.view.Main": [
     "widget.main"
+  ],
+  "Qum.view.VendorHome": [
+    "widget.vhome"
   ]
 });
 
+Ext.setVersion("sencha-azure", "1.0.0.180");
+Ext.setVersion("touch-azure", "1.0.0.180");
 
 /**
  * This file is generated by Sencha Cmd and should NOT be edited.  It is
  * provided to support globbing requires, custom xtypes, and other
  * metadata-driven class system features
  */
+Ext.Loader.loadScriptFile('packages/remote/sencha-azure/overrides-touch/JsonReader.js', Ext.emptyFn);
+Ext.Loader.loadScriptFile('packages/remote/sencha-azure/overrides-touch/Azure.js', Ext.emptyFn);
 
 
